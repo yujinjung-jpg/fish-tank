@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>작은 어항 🐠</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tank.css">
+</head>
+<body>
+  <canvas id="cv"></canvas>
+  <div class="hud" id="hud">
+    <button id="bFeed" title="먹이 주기">🍤</button>
+    <button id="bAdd" title="친구 데려오기">🐟</button>
+    <button id="bDeco" title="꾸미기">🌿</button>
+    <button id="bClean" title="청소">🧽</button>
+    <button id="bTheme" title="배경">🏠</button>
+    <button id="bMute" title="소리">🔊</button>
+  </div>
+  <div class="edit hidden" id="edit">
+    <div class="tabs" id="eTabs"></div>
+    <div class="items" id="eItems"></div>
+  </div>
+  <div class="scrub hidden" id="scrub">
+    <span id="scPct">✨ 100%</span>
+    <span class="scbar"><i id="scBar"></i></span>
+    <button class="done" id="scDone">완료</button>
+  </div>
+  <div class="sel hidden" id="eSel">
+    <button id="sRot" title="돌리기">🔄</button>
+    <button id="sSize" title="크기">🔍</button>
+    <button id="sCol" title="색">🎨</button>
+    <button id="sDel" title="빼기">🗑</button>
+  </div>
+  <div id="tag" class="tag hidden"></div>
+  <div id="toast"></div>
+  <div id="modal" class="modal hidden"><div class="card"><button class="x" id="mClose">✕</button><div id="mBody"></div></div></div>
+  <script type="module" src="tank.js"></script>
+  <script type="module" src="fun.js"></script>
+</body>
+</html>

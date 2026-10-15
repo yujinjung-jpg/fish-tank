@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "작은 어항 🐠",
+  "version": "1.0.0",
+  "description": "도트 3D 물고기를 키우는 아기자기한 어항",
+  "permissions": ["storage"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "어항 보기" }
+}
